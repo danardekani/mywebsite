@@ -1,9 +1,9 @@
-const express = require('express');
-const app = express();
+let express = require('express');
+let app = express();
 
 app.set('view engine', 'pug');
 
-app.use(express.static(__dirname +'/public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
   res.render('index', {
@@ -11,6 +11,6 @@ app.get('/', (req, res) => {
   });
 });
 
-const server = app.listen(7000, () => {
+let server = app.listen(7000, () => {
   console.log(`Running port ${server.address().port}`);
 });
