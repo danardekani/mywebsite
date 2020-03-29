@@ -133,3 +133,14 @@ body {
   border-radius: 5px;
 }
 
+.button-linkedin {
+  color: #FFFFFF;
+  background-color: #007dbb;
+  border-radius: 5px;
+}
+
+.button-github {
+  color: #FFFFFF;
+  background: #24292e; 
+  border-radius: 5px;
+}

@@ -13,5 +13,12 @@ block content
         | #{person.tagline}
       p.profile-bio
         | #{person.bio}
+      a.button.button-github(href=`${person.github}`)
+        | Follow me on GitHub
+      a.button.button-linkedin(href=`${person.linkedin}`)
+        | Connect with me on LinkedIn
       a.button.button-twitter(href=`${person.twitter}`)
         | Follow me on Twitter
+      
+      
+      
