@@ -1,4 +1,6 @@
 let express = require('express');
+let people = require('./myProfile.json');
+
 let app = express();
 
 app.set('view engine', 'pug');
@@ -7,7 +9,8 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'Homepage'
+    title: 'Homepage',
+    myProfile: 'myProfile.profile'
   });
 });
 
