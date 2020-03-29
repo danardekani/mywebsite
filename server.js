@@ -1,5 +1,5 @@
 let express = require('express');
-let people = require('./myProfile.json');
+let people = require('./people.json');
 
 let app = express();
 
@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => {
   res.render('index', {
     title: 'Homepage',
-    myProfile: 'myProfile.profile'
+    people: people.profiles
   });
 });
 
