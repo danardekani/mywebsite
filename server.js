@@ -5,7 +5,7 @@ app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
   res.render('index', {
-    name: 'Daniel Ardekani'
+    title: 'Homepage'
   });
 });
 
