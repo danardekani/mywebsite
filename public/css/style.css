@@ -144,3 +144,27 @@ body {
   background: #24292e; 
   border-radius: 5px;
 }
+
+
+
+/* Top bar navigation
+   ========================================================================== */
+
+.topnav {
+  position: fixed;
+  top: 0;
+  width: 100%
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav-items {
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
